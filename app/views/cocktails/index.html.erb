@@ -1,12 +1,16 @@
-<h1>Cocktails</h1>
 
-<ul>
-  <% @cocktails.each do |cocktail| %>
-    <li>
-      <%= link_to cocktail.name, cocktail_path(cocktail) %> | 
-      <%= link_to 'Create', new_cocktail_path %> |
-      <%= link_to 'Delete', cocktail_path(cocktail), method: :delete, data: {confirm: 'Delete cocktail?'}  %>    
-    </li>
-  <% end %>
-</ul>
-<%= link_to 'Add New Cocktail', new_cocktail_path %>
+<div class="container">
+  <h1>COCKTAILS</h1>
+
+  <div class="card">
+    <ul>
+      <% @cocktails.each do |cocktail| %>
+        <li>
+          <%= link_to cocktail.name, cocktail_path(cocktail) %>
+          <%= link_to 'Delete', cocktail_path(cocktail), method: :delete, data: {confirm: 'Delete cocktail?'} %>
+          <i class="far fa-times-circle"></i>  
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

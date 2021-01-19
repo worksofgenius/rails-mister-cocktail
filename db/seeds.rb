@@ -7,7 +7,7 @@ puts 'Creating cocktails...'
 
 5.times do
   Cocktail.create(
-    name: "#{Faker::Beer.name}"
+    name: "#{Faker::NatoPhoneticAlphabet.code_word} #{Faker::NatoPhoneticAlphabet.code_word} #{Faker::NatoPhoneticAlphabet.code_word}"
   )
 end
 
