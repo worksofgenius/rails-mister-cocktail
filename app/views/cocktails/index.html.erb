@@ -7,8 +7,9 @@
       <% @cocktails.each do |cocktail| %>
         <li>
           <%= link_to cocktail.name, cocktail_path(cocktail) %>
-          <%= link_to 'Delete', cocktail_path(cocktail), method: :delete, data: {confirm: 'Delete cocktail?'} %>
-          <i class="far fa-times-circle"></i>  
+          <%= link_to cocktail_path(cocktail), method: :delete, data: {confirm: 'Delete cocktail?'}, :class=> "you_class" do %>
+            <i class="far fa-times-circle"></i>
+          <% end %>  
         </li>
       <% end %>
     </ul>

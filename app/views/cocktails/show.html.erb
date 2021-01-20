@@ -7,8 +7,10 @@
         <li>
           <%= dose.ingredient.name %>,
           <%= dose.description %>
-          <%= link_to 'Delete Dose', dose_path(dose), method: :delete, data: { confirm: "Delete this ingredient?" }%> 
-        </li><i class="far fa-times-circle"></i>
+          <%= link_to dose_path(dose), method: :delete, data: { confirm: "Delete this ingredient?" }, :class=> "you_class" do %> 
+        <i class="far fa-times-circle"></i>
+        <% end %>
+            </li>
       <% end %>
     </ul>
     <%= link_to 'Add Another Ingredient', new_cocktail_dose_path(@cocktail) %>
