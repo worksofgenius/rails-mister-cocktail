@@ -1,13 +1,16 @@
 
-<div class="container">
-  <h1>COCKTAILS</h1>
-
-  <div class="card">
-    <ul>
-      <% @cocktails.each do |cocktail| %>
+<div class="flex-grid">
+  <div class="col">
+    <h1>COCKTAILS</h1>
+    <hr>
+  </div>
+  
+  <div class="col">
+  <ul>
+  <% @cocktails.each do |cocktail| %>
         <li>
           <%= link_to cocktail.name, cocktail_path(cocktail) %>
-          <%= link_to cocktail_path(cocktail), method: :delete, data: {confirm: 'Delete cocktail?'}, :class=> "you_class" do %>
+          <%= link_to cocktail_path(cocktail), method: :delete, data: {confirm: 'Delete this cocktail?'}, :class=> "delete-icon" do %>
             <i class="far fa-times-circle"></i>
           <% end %>  
         </li>

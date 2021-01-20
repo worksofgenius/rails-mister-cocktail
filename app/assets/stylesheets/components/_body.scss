@@ -1,0 +1,55 @@
+body {
+  background-color: #fafafa;
+}
+
+h1 {
+  color: $black;
+}
+
+h2 {
+  color: $gray;
+}
+
+p {
+  color: $gray;
+}
+
+hr {
+  border: 1px solid $orange;
+}
+
+a {
+  color: $gray;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $light-gray;
+  text-decoration: none;
+}
+
+.fa-icon:hover {
+  color: $red;
+}
+
+.container {
+  width: 800px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.flex-grid {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
+}

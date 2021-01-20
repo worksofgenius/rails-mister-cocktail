@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+      
     <title>Cocktails</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -13,8 +18,8 @@
 
   <body>
     <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-    <%= link_to "#", class: "navbar-brand" do %>
-      <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
+    <%= link_to cocktails_path, class: "navbar-brand" do %>
+      <%= image_tag "cocktails-logo.png", :alt => "Logo" %>
       <% end %>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +43,9 @@
     </div>
 
     <div class="footer">
-      © Works of Genius
+      <div class="footer-copyright">
+        <%= link_to "© Works of Genius", "https://github.com/worksofgenius", :target => "_blank" %>
+      </div>
     </div>
   </body>
 </html>

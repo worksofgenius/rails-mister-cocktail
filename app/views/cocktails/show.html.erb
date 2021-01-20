@@ -1,18 +1,18 @@
 <div class="container">
-  <h1><%= @cocktail.name %></h1>
-
-  <div class="card">
-    <ul>
-      <% @cocktail.doses.each do |dose| %>
-        <li>
+  <div class="card-cocktail">
+    <%= image_tag "new-card.png", :alt => "Cocktail" %>
+    <div class="card-cocktail-info">
+      <div>
+        <h2><%= @cocktail.name %></h2>
+        <br>
+        <p><% @cocktail.doses.each do |dose| %>
           <%= dose.ingredient.name %>,
           <%= dose.description %>
-          <%= link_to dose_path(dose), method: :delete, data: { confirm: "Delete this ingredient?" }, :class=> "you_class" do %> 
-        <i class="far fa-times-circle"></i>
+          <%= link_to dose_path(dose), method: :delete, data: { confirm: "Delete this ingredient?" } do %>
+          <i class="far fa-times-circle"></i></p>
+          <% end %>
         <% end %>
-            </li>
-      <% end %>
-    </ul>
-    <%= link_to 'Add Another Ingredient', new_cocktail_dose_path(@cocktail) %>
+      </div>
+      <%= link_to 'Add Another Ingredient', new_cocktail_dose_path(@cocktail), class: "btn btn-secondary" %>
   </div>
 </div>

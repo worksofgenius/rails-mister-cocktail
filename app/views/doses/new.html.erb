@@ -1,7 +1,14 @@
 <div class="container">
-  <%= simple_form_for [@cocktail, @dose] do |f| %>
-    <%= f.association :ingredient %>
-    <%= f.input :description %>
-    <%= f.submit class: 'btn btn-primary' %>
-  <% end %>
+  <div class="card-cocktail">
+    <%= image_tag "fruit-slices.jpg", :alt => "Cocktail" %>
+    <div class="card-cocktail-info">
+      <div>
+        <%= simple_form_for [@cocktail, @dose] do |f| %>
+          <%= f.association :ingredient %>
+          <%= f.input :description %>
+          <%= f.submit class: 'btn btn-secondary' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>
