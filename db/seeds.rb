@@ -5,11 +5,11 @@ Cocktail.destroy_all
 
 puts 'Creating cocktails...'
 
-# 5.times do
-#  Cocktail.create(
-#    name: "#{Faker::NatoPhoneticAlphabet.code_word} #{Faker::NatoPhoneticAlphabet.code_word} #{Faker::NatoPhoneticAlphabet.code_word}"
-#  )
-# end
+1.times do
+  Cocktail.create(
+  name: "#{Faker::NatoPhoneticAlphabet.code_word} #{Faker::NatoPhoneticAlphabet.code_word} #{Faker::NatoPhoneticAlphabet.code_word}"
+)
+end
 
 puts 'Completed!'
 
