@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+COCKTAIL is a cocktail manager web app currently designed to run on a computer. 
 
-Things you may want to cover:
+Create, edit, and delete recipies.
 
-* Ruby version
+Add beautiful images with your drink.
 
-* System dependencies
+Mobile version to be released soon.
 
-* Configuration
 
-* Database creation
+* Ruby version: 2.6.6
 
-* Database initialization
+* Heroku
 
-* How to run the test suite
+* Cloudinary
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Built on Ruby on Rails
