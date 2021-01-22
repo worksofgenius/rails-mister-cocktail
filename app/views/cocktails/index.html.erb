@@ -3,6 +3,53 @@
   <div class="col">
     <h1>COCKTAILS</h1>
     <hr>
+    <br>
+    <div id="carouselExampleSlidesOnly" class="carousel slide shadow-sm p-3 mb-5 bg-white rounded" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <%= image_tag "drink0.jpg", :class => "d-block w-100", :alt => "Drink" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "drink1.jpg", :class => "d-block w-100", :alt => "Drink" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "drink2.jpg", :class => "d-block w-100", :alt => "Drink" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "drink3.jpg", :class => "d-block w-100", :alt => "Drink" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "drink4.jpg", :class => "d-block w-100", :alt => "Drink" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "drink5.jpg", :class => "d-block w-100", :alt => "Drink" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "drink6.jpg", :class => "d-block w-100", :alt => "Drink" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "drink7.jpg", :class => "d-block w-100", :alt => "Drink" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "drink8.jpg", :class => "d-block w-100", :alt => "Drink" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "drink9.jpg", :class => "d-block w-100", :alt => "Drink" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "drink10.jpg", :class => "d-block w-100", :alt => "Drink" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "drink11.jpg", :class => "d-block w-100", :alt => "Drink" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "drink12.jpg", :class => "d-block w-100", :alt => "Drink" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "drink13.jpg", :class => "d-block w-100", :alt => "Drink" %>
+        </div>
+      </div>
+    </div>
   </div>
   
   <div class="col">
@@ -10,7 +57,7 @@
   <% @cocktails.each do |cocktail| %>
         <li>
           <%= link_to cocktail.name, cocktail_path(cocktail) %>
-          <%= link_to cocktail_path(cocktail), method: :delete, data: {confirm: 'Delete this cocktail?'}, :class=> "delete-icon" do %>
+          <%= link_to cocktail_path(cocktail), method: :delete, data: {confirm: 'Delete this cocktail?'}, :class => "delete-icon" do %>
             <i class="far fa-times-circle"></i>
           <% end %>  
         </li>
