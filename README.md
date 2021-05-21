@@ -1,18 +1,23 @@
-# README
+# Cocktails
 
-COCKTAIL is a cocktail manager web app currently designed to run on a desktop computer. 
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Visit](#visit)
 
-Create, edit, and delete recipies.
+## General info
+Cocktails is a drink management web app. 
 
-Add beautiful images with your cocktail recipe.
+Create, edit, and delete simple drink recipies.
 
-The mobile version will be released in April 2021.
-
-
-* Ruby version: 2.6.6
-
+Upload beautiful images to accompany your recipe.
+	
+## Technologies
+Cocktails was created with:
+* Ruby on Rails
+* HTML/SCSS
+* [Cloudinary](https://cloudinary.com/)
 * Heroku
-
-* Cloudinary
-
-* Built on Ruby on Rails
+	
+## Visit
+To visit this project, go to: https://rails-cocktail-webapp.herokuapp.com/
