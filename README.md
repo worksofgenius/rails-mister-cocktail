@@ -15,6 +15,7 @@ Upload beautiful images to accompany your recipe.
 ## Technologies
 Cocktails was created with:
 * Ruby on Rails
+* JavaScript
 * HTML/SCSS
 * [Cloudinary](https://cloudinary.com/)
 * Heroku
