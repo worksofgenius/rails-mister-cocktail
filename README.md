@@ -1,4 +1,5 @@
 # Cocktails
+<img src="https://github.com/worksofgenius/rails-mister-cocktail/blob/master/cocktails-screenshot.png" height="50%" width="50%">
 
 ## Table of contents
 * [General info](#general-info)
